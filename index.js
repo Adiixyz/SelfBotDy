@@ -615,7 +615,7 @@ _~Rick Astley_
 ➢ Date : ${tampilTanggal}
 ➢ Time : ${time}
 ➢ User : ${pushname}
-➢ Bio : ${stst}
+
 
 *⌜ I N F O ⌟:*
 ${x} #sc
