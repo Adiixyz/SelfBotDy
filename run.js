@@ -65,8 +65,8 @@ const starts = async (conn = new WAConnection()) => {
     conn.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
     console.log(color('[GROUP]'), color(`Group Setting Change In ${metdata.subject}`,  'cyan'))
   }
-  })
-}*/
+  })*/
+}
 
 /************************************
  * Uncache if there is file change
