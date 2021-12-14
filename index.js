@@ -598,11 +598,13 @@ case 'jadibot':
 
 case'menu':
 case'help':
+let piturs = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 kntl = process.uptime()
 stst = await conn.getStatus(`${sender.split('@')[0]}@c.us`)
 stst = stst.status == 401 ? 'unknown' : stst.status
 	
-mana =`I never give up
+mana =`We know each other for so long
+_~Rick Astley_
 
 ➢ Library : @adiwajshing/baileys
 ➢ Runtime : ${waktu(kntl)}
@@ -759,7 +761,7 @@ ${x} #listvn
 ${x} #getvideo
 ${x} #listvideo
 ${x} #addvideo`
-sendButMessage(from, `${mana}`, `self.bo tz`, [
+sendButLocation(from, `${mana}`, `self.bo tz`, [
           {
             buttonId: `sc`,
             buttonText: {
@@ -774,7 +776,7 @@ sendButMessage(from, `${mana}`, `self.bo tz`, [
             },
             type: 1,
           },
-        ], {contextInfo: { mentionedJid: [sender]}});
+        ], `${piturs}`, {contextInfo: { mentionedJid: [sender]}});
         break
 
 case 'tagme':
