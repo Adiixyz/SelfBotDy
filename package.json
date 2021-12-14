@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
-    "adii-api": "github:adiixyz/adii-api",
+    "adii-api": "github:adiixyz/api-adii",
     "@vitalets/google-translate-api": "^7.0.0",
     "async": "^2.4.1",
     "awesome-phonenumber": "^2.57.0",
