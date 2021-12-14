@@ -600,9 +600,13 @@ case'menu':
 case'help':
 let piturs = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 kntl = process.uptime()
-stst = await conn.getStatus(`${sender.split('@')[0]}@c.us`)
-stst = stst.status == 401 ? 'unknown' : stst.status
-	
+
+try {
+       ppuser = await conn.getProfilePicture(`${sender}`)
+    } catch {
+       ppuser = piturs
+    }
+let gamburnya = await getBuffer(ppuser)
 mana =`We know each other for so long
 _~Rick Astley_
 
@@ -761,7 +765,8 @@ ${x} #listvn
 ${x} #getvideo
 ${x} #listvideo
 ${x} #addvideo`
-sendButLocation(from, `${mana}`, `self.bo tz`, `${piturs}`, [
+
+let buton = [
           {
             buttonId: `sc`,
             buttonText: {
@@ -776,7 +781,8 @@ sendButLocation(from, `${mana}`, `self.bo tz`, `${piturs}`, [
             },
             type: 1,
           },
-        ], {});
+        ]
+sendButLocation(from, `${mana}`, `self.bo tz`, ppuser, buton, {});
         break
 
 case 'tagme':
