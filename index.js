@@ -794,7 +794,7 @@ let buton = [
             type: 1,
           },
         ]
-sendButLoc(from, `${mana}`, `self.bo tz`, ppuser, buton, {});
+sendButLoc(from, `${mana}`, `self.bo tz`, gamburnya, buton, {});
         break
 
 case 'tagme':
