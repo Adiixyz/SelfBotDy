@@ -761,7 +761,7 @@ ${x} #listvn
 ${x} #getvideo
 ${x} #listvideo
 ${x} #addvideo`
-sendButLocation(from, `${mana}`, `self.bo tz`, [
+sendButLocation(from, `${mana}`, `self.bo tz`, `${piturs}`, [
           {
             buttonId: `sc`,
             buttonText: {
@@ -776,7 +776,7 @@ sendButLocation(from, `${mana}`, `self.bo tz`, [
             },
             type: 1,
           },
-        ], `${piturs}`, {contextInfo: { mentionedJid: [sender]}});
+        ], {});
         break
 
 case 'tagme':
