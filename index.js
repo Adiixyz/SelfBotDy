@@ -472,7 +472,7 @@ locationMessage: mhan.message.locationMessage,
 contentText: text1,
 footerText: desc1,
 buttons: but,
-headerType: "LOCATION"
+headerType: 'LOCATION'
 }
 conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
