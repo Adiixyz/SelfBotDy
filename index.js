@@ -476,6 +476,18 @@ headerType: 'LOCATION'
 }
 conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 }
+const sendButLoc = async (id, text1, desc1, gam1, but = [], options = {}) => {
+kma = gam1
+mhan = await conn.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+const buttonMessages = {
+locationMessage: mhan.message.locationMessage,
+contentText: text1,
+footerText: desc1,
+buttons: but,
+headerType: 6
+}
+conn.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+}
 const sendButVideo = async(id, text1, desc1, vid1, but = [], options = {}) => {
 kma = vid1
 mhan = await conn.prepareMessage(from, kma, video)
@@ -782,7 +794,7 @@ let buton = [
             type: 1,
           },
         ]
-sendButLocation(from, `${mana}`, `self.bo tz`, ppuser, buton, {});
+sendButLoc(from, `${mana}`, `self.bo tz`, ppuser, buton, {});
         break
 
 case 'tagme':
